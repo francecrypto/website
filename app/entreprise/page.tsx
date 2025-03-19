@@ -31,9 +31,6 @@ export default function EntreprisePage() {
               <p className="mt-2 text-gray-500 dark:text-gray-400">
                 Mise en place sécurisée de vos infrastructures cryptographiques avec des protocoles rigoureux.
               </p>
-              <Button asChild variant="link" className="mt-4">
-                <Link href="/entreprise/ceremonie-cles">En savoir plus</Link>
-              </Button>
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="mb-4 rounded-full bg-blue-100 p-4 dark:bg-blue-900">
@@ -43,9 +40,6 @@ export default function EntreprisePage() {
               <p className="mt-2 text-gray-500 dark:text-gray-400">
                 Évaluation complète de la sécurité de vos systèmes blockchain et recommandations d'amélioration.
               </p>
-              <Button asChild variant="link" className="mt-4">
-                <Link href="/entreprise/audit">En savoir plus</Link>
-              </Button>
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="mb-4 rounded-full bg-blue-100 p-4 dark:bg-blue-900">
@@ -55,9 +49,6 @@ export default function EntreprisePage() {
               <p className="mt-2 text-gray-500 dark:text-gray-400">
                 Solutions institutionnelles pour l'acquisition et la gestion d'actifs numériques.
               </p>
-              <Button asChild variant="link" className="mt-4">
-                <Link href="/entreprise/achat-vente">En savoir plus</Link>
-              </Button>
             </div>
           </div>
         </div>

@@ -76,7 +76,7 @@ export function BookingCard({ title, location, price, duration, description }: B
                 <DialogHeader>
                   <DialogTitle>Réserver un rendez-vous</DialogTitle>
                   <DialogDescription>
-                    Pour l'instant vous pouvez réserver en nous contactant à email@francrypto.org ou par téléphone / sms / whatsapp : 07 56 91 55 05
+                    Pour l'instant vous pouvez réserver en nous contactant à email@francecrypto.org ou par téléphone / sms / whatsapp : 07 56 91 55 05
                   </DialogDescription>
                 </DialogHeader>
               </>

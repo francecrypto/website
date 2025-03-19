@@ -21,36 +21,18 @@ export default function Home() {
                   particulier ou entreprise.
                 </p>
               </div>
-              <div className="space-x-4">
-                <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700">
-                  <Link href="#booking">Réserver un rendez-vous</Link>
-                </Button>
-              </div>
             </div>
-          </div>
-        </section>
 
-        {/* Services Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-gray-950">
-          <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Nos Services</h2>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Des solutions adaptées à vos besoins spécifiques
-                </p>
-              </div>
-            </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:gap-12 mt-8">
               <ServiceCard
                 icon={<Users className="h-10 w-10 text-blue-600" />}
                 title="Particulier"
                 description="Accompagnement personnalisé pour les particuliers souhaitant se lancer dans les cryptomonnaies."
                 features={[
-                  "Création de wallet",
-                  "Achat et vente de cryptomonnaies",
+                  "Création de wallet et phrase de récupération",
+                  "Ache ter et vendre des cryptomonnaies",
                   "Conseil en sécurité",
-                  "Récupération de cryptomonnaies",
+                  "Récupération de cryptomonnaies perdues",
                   "Analyse de transactions suspectes",
                 ]}
                 href="/particulier"
@@ -61,9 +43,10 @@ export default function Home() {
                 description="Solutions professionnelles pour les entreprises souhaitant intégrer la blockchain."
                 features={[
                   "Cérémonie des clés",
+                  "Etude des solutions entreprise et institutionnel",
                   "Audit de sécurité",
-                  "Achat et vente de cryptomonnaies",
-                  "Conseil stratégique",
+                  "Conversion Euro / Crypto",
+                  "Réglementation PSAN et MiCA",
                 ]}
                 href="/entreprise"
               />

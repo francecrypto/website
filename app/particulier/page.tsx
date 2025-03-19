@@ -31,9 +31,6 @@ export default function ParticulierPage() {
               <p className="mt-2 text-gray-500 dark:text-gray-400">
                 Apprenez à créer et sécuriser votre portefeuille de cryptomonnaies.
               </p>
-              <Button asChild variant="link" className="mt-4">
-                <Link href="/particulier/wallet">En savoir plus</Link>
-              </Button>
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="mb-4 rounded-full bg-blue-100 p-4 dark:bg-blue-900">
@@ -43,9 +40,6 @@ export default function ParticulierPage() {
               <p className="mt-2 text-gray-500 dark:text-gray-400">
                 Comment acheter et vendre des cryptomonnaies en toute sécurité.
               </p>
-              <Button asChild variant="link" className="mt-4">
-                <Link href="/particulier/achat-vente">En savoir plus</Link>
-              </Button>
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="mb-4 rounded-full bg-blue-100 p-4 dark:bg-blue-900">
@@ -55,9 +49,6 @@ export default function ParticulierPage() {
               <p className="mt-2 text-gray-500 dark:text-gray-400">
                 Protégez vos actifs numériques contre les menaces et les arnaques.
               </p>
-              <Button asChild variant="link" className="mt-4">
-                <Link href="/particulier/securite">En savoir plus</Link>
-              </Button>
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="mb-4 rounded-full bg-blue-100 p-4 dark:bg-blue-900">
@@ -67,9 +58,6 @@ export default function ParticulierPage() {
               <p className="mt-2 text-gray-500 dark:text-gray-400">
                 Solutions pour récupérer l'accès à vos cryptomonnaies.
               </p>
-              <Button asChild variant="link" className="mt-4">
-                <Link href="/particulier/recuperation">En savoir plus</Link>
-              </Button>
             </div>
             <div className="flex flex-col items-center text-center">
               <div className="mb-4 rounded-full bg-blue-100 p-4 dark:bg-blue-900">
@@ -79,9 +67,6 @@ export default function ParticulierPage() {
               <p className="mt-2 text-gray-500 dark:text-gray-400">
                 Vous avez un doute sur un email ou une transaction ? Nous pouvons vous aider à l'analyser.
               </p>
-              <Button asChild variant="link" className="mt-4">
-                <Link href="/particulier/analyse-suspecte">En savoir plus</Link>
-              </Button>
             </div>
           </div>
         </div>
