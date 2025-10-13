@@ -32,27 +32,61 @@ export function Header() {
             <span className="text-xl font-bold">FranceCrypto</span>
           </Link>
         </div>
-          <Sheet open={open} onOpenChange={setOpen}>
-            <SheetTrigger asChild>
-              <Button variant="outline" size="icon">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Toggle menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right">
-              <nav className="flex flex-col gap-4">
-                <Link href="/" className="text-lg font-medium" onClick={() => setOpen(false)}>
-                  Accueil
-                </Link>
-                <Link href="/particulier" className="text-lg font-medium" onClick={() => setOpen(false)}>
-                  Particulier
-                </Link>
-                <Link href="/entreprise" className="text-lg font-medium" onClick={() => setOpen(false)}>
-                  Entreprise
-                </Link>
-              </nav>
-            </SheetContent>
-          </Sheet>
+            {isDesktop ? (
+              <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <Link href="/particulier" legacyBehavior passHref>
+                      <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                        Particulier
+                      </NavigationMenuLink>
+                    </Link>
+                  </NavigationMenuItem>
+                  <NavigationMenuItem>
+                    <Link href="/entreprise" legacyBehavior passHref>
+                      <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                        Entreprise
+                      </NavigationMenuLink>
+                    </Link>
+                  </NavigationMenuItem>
+                  <NavigationMenuItem>
+                    <Link href="/plateformes" legacyBehavior passHref>
+                      <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                        Plateformes d'échange
+                      </NavigationMenuLink>
+                    </Link>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+            ) : (
+              <Sheet open={open} onOpenChange={setOpen}>
+                <SheetTrigger asChild>
+                  <Button variant="outline" size="icon">
+                    <Menu className="h-6 w-6" />
+                    <span className="sr-only">Toggle menu</span>
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right">
+                  <nav className="flex flex-col gap-4">
+                    <Link href="/" className="text-lg font-medium" onClick={() => setOpen(false)}>
+                      Accueil
+                    </Link>
+                    <Link href="/particulier" className="text-lg font-medium" onClick={() => setOpen(false)}>
+                      Particulier
+                    </Link>
+                    <Link href="/entreprise" className="text-lg font-medium" onClick={() => setOpen(false)}>
+                      Entreprise
+                    </Link>
+                    <Link href="/donner-crypto-dust" className="text-lg font-medium" onClick={() => setOpen(false)}>
+                      Donner poussières
+                    </Link>
+                    <Link href="/plateformes" className="text-lg font-medium" onClick={() => setOpen(false)}>
+                      Plateformes d'échange
+                    </Link>
+                  </nav>
+                </SheetContent>
+              </Sheet>
+            )}
       </div>
     </header>
   )
