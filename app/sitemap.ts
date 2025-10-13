@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
  
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://francecrypto.fr'
+  const baseUrl = 'https://francecrypto.org'
   
   return [
     {

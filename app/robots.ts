@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://francecrypto.fr/sitemap.xml',
+    sitemap: 'https://francecrypto.org/sitemap.xml',
   }
 }
