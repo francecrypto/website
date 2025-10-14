@@ -1,5 +1,7 @@
 import Link from "next/link"
 import { Bitcoin } from "lucide-react"
+import { TelegramIcon } from "./icons/telegram"
+import { DiscordIcon } from "./icons/discord"
 
 export function Footer() {
   return (
@@ -17,7 +19,14 @@ export function Footer() {
             Contact
           </Link>
         </div>
-        <div className="text-sm text-muted-foreground">email@francecrypto.org</div>
+        <div className="flex items-center gap-3">
+          <Link href="https://t.me/francecrypto_org" target="_blank" rel="noopener noreferrer" aria-label="Telegram FranceCrypto">
+            <TelegramIcon className="w-9 h-9 text-gray-400 hover:text-blue-500 transition-colors duration-200" />
+          </Link>
+          <Link href="https://discord.gg/4wQ6NAKtjw" target="_blank" rel="noopener noreferrer" aria-label="Discord FranceCrypto">
+            <DiscordIcon className="w-9 h-9 text-gray-400 hover:text-indigo-500 transition-colors duration-200" />
+          </Link>
+        </div>
       </div>
     </footer>
   )

@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, Phone } from "lucide-react"
+import { TelegramIcon } from "@/components/icons/telegram"
+import { DiscordIcon } from "@/components/icons/discord"
+import Link from "next/link"
 
 export default function ContactPage() {
   return (
@@ -25,6 +28,20 @@ export default function ContactPage() {
               <a href="tel:+33756915505" className="hover:underline">
                 +33 7 56 91 55 05
               </a>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <p className="text-lg mb-4">Vous pouvez aussi nous contacter sur Telegram ou Discord</p>
+            <div className="flex items-center gap-4">
+              <Link href="https://t.me/francecrypto_org" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:underline">
+                <TelegramIcon className="w-6 h-6 text-blue-500" />
+                <span>Telegram</span>
+              </Link>
+              <Link href="https://discord.gg/4wQ6NAKtjw" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:underline">
+                <DiscordIcon className="w-6 h-6 text-indigo-500" />
+                <span>Discord</span>
+              </Link>
             </div>
           </div>
         </div>
